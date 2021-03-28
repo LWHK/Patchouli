@@ -92,7 +92,7 @@
 	
 	"patchouli.gui.lexicon.edition.divisor": "0",
 	"patchouli.gui.lexicon.edition.exception_divisor": "0",
-	"patchouli.gui.lexicon.edition.common": "第",
+	"patchouli.gui.lexicon.edition.common": "第 ",
 	"patchouli.gui.lexicon.edition.order": "1",
 	"_comment": "0 means the number is before the word (suffix), 1 means the number is after the word (prefix)."
 }
