@@ -267,21 +267,17 @@ public class Book {
 			int divisor = TranslationTextComponent("patchouli.gui.lexicon.edition.divisor");
 			int exception_divisor = TranslationTextComponent("patchouli.gui.lexicon.edition.exception_divisor");
 			for (int j = 1; j <= exception_divisor; j ++)
-			{
 				if (TranslationTextComponent("patchouli.gui.lexicon.edition.exception_number." + j) != "" && i % exception_divisor == j)
 				{
 					x = TranslationTextComponent("patchouli.gui.lexicon.edition.exception_number." + j);
 					return TranslationTextComponent("patchouli.gui.lexicon.edition.order") == "0" ? x + i : i + x;
 				}
-			}
 			for (int j = 1; j <= divisor; j ++)
-			{
 				if (TranslationTextComponent("patchouli.gui.lexicon.edition.number." + j) != "" && i % divisor == j)
 				{
 					x = TranslationTextComponent("patchouli.gui.lexicon.edition.number." + j);
 					return TranslationTextComponent("patchouli.gui.lexicon.edition.order") == "0" ? x + i : i + x;
 				}
-			}
 		}
 		return TranslationTextComponent("patchouli.gui.lexicon.edition.order") == "0" ? x + i : i + x;
 	}
