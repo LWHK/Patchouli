@@ -259,31 +259,31 @@ public class Book {
 
 	private static String numberToOrdinal(int i) {
 		// return i % 100 == 11 || i % 100 == 12 || i % 100 == 13 ? i + "th" : i + ORDINAL_SUFFIXES[i % 10];
-		String x = TranslationTextComponent("patchouli.gui.lexicon.common");
-		if (TranslationTextComponent("patchouli.gui.lexicon.exception_divisor") == "0" || TranslationTextComponent("patchouli.gui.lexicon.divisor" == "0")
-			return TranslationTextComponent("patchouli.gui.lexicon.order") == "0" ? x + i : i + x;
+		String x = TranslationTextComponent("patchouli.gui.lexicon.edition.common");
+		if (TranslationTextComponent("patchouli.gui.lexicon.edition.exception_divisor") == "0" || TranslationTextComponent("patchouli.gui.lexicon.edition.divisor" == "0")
+			return TranslationTextComponent("patchouli.gui.lexicon.edition.order") == "0" ? x + i : i + x;
 		else
 		{
-			int divisor = TranslationTextComponent("patchouli.gui.lexicon.divisor");
-			int exception_divisor = TranslationTextComponent("patchouli.gui.lexicon.exception_divisor");
+			int divisor = TranslationTextComponent("patchouli.gui.lexicon.edition.divisor");
+			int exception_divisor = TranslationTextComponent("patchouli.gui.lexicon.edition.exception_divisor");
 			for (int j = 1; j <= exception_divisor; j ++)
 			{
-				if (TranslationTextComponent("patchouli.gui.lexicon.exception_number." + j) != "" && i % exception_divisor == j)
+				if (TranslationTextComponent("patchouli.gui.lexicon.edition.exception_number." + j) != "" && i % exception_divisor == j)
 				{
-					x = TranslationTextComponent("patchouli.gui.lexicon.exception_number." + j);
-					return TranslationTextComponent("patchouli.gui.lexicon.order") == "0" ? x + i : i + x;
+					x = TranslationTextComponent("patchouli.gui.lexicon.edition.exception_number." + j);
+					return TranslationTextComponent("patchouli.gui.lexicon.edition.order") == "0" ? x + i : i + x;
 				}
 			}
 			for (int j = 1; j <= divisor; j ++)
 			{
-				if (TranslationTextComponent("patchouli.gui.lexicon.number." + j) != "" && i % divisor == j)
+				if (TranslationTextComponent("patchouli.gui.lexicon.edition.number." + j) != "" && i % divisor == j)
 				{
-					x = TranslationTextComponent("patchouli.gui.lexicon.number." + j);
-					return TranslationTextComponent("patchouli.gui.lexicon.order") == "0" ? x + i : i + x;
+					x = TranslationTextComponent("patchouli.gui.lexicon.edition.number." + j);
+					return TranslationTextComponent("patchouli.gui.lexicon.edition.order") == "0" ? x + i : i + x;
 				}
 			}
 		}
-		return TranslationTextComponent("patchouli.gui.lexicon.order") == "0" ? x + i : i + x;
+		return TranslationTextComponent("patchouli.gui.lexicon.edition.order") == "0" ? x + i : i + x;
 	}
 
 }
