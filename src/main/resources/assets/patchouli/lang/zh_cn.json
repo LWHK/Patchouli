@@ -88,5 +88,11 @@
 	"patchouli.gui.lexicon.button.config": "配置",
 	"patchouli.gui.lexicon.button.visualize": "可视化",
 	"patchouli.gui.lexicon.button.visualize.info": "（再次点击以清除）",
-	"patchouli.gui.lexicon.button.history": "浏览历史"
+	"patchouli.gui.lexicon.button.history": "浏览历史",
+	
+	"patchouli.gui.lexicon.edition.divisor": "0",
+	"patchouli.gui.lexicon.edition.exception_divisor": "0",
+	"patchouli.gui.lexicon.edition.common": "第",
+	"patchouli.gui.lexicon.edition.order": "1",
+	"_comment": "0 means the number is before the word (suffix), 1 means the number is after the word (prefix)."
 }

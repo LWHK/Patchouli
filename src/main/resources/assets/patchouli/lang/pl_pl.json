@@ -79,5 +79,17 @@
 	"patchouli.gui.lexicon.button.config": "Konfiguracja",
 	"patchouli.gui.lexicon.button.visualize": "Wizualizacja",
 	"patchouli.gui.lexicon.button.visualize.info": "(Kliknij ponownie aby wyczyścić)",
-	"patchouli.gui.lexicon.button.history": "Historia"
+	"patchouli.gui.lexicon.button.history": "Historia",
+	
+	"patchouli.gui.lexicon.edition.divisor": "10",
+	"patchouli.gui.lexicon.edition.number.1": "st",
+	"patchouli.gui.lexicon.edition.number.2": "nd",
+	"patchouli.gui.lexicon.edition.number.3": "rd",
+	"patchouli.gui.lexicon.edition.exception_divisor": "100",
+	"patchouli.gui.lexicon.edition.number.11": "th",
+	"patchouli.gui.lexicon.edition.number.12": "th",
+	"patchouli.gui.lexicon.edition.number.13": "th",
+	"patchouli.gui.lexicon.edition.common": "th",
+	"patchouli.gui.lexicon.edition.order": "0",
+	"_comment": "0 means the number is before the word (suffix), 1 means the number is after the word (prefix)."
 }
